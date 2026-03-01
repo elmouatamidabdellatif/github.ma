@@ -411,8 +411,12 @@ data-user="vPh13ZwAAAAJ">
 </div>
 
 <footer>
-© {{ now.Year }} Abdellatif Elmouatamid – Academic Faculty Website
+  © <span id="year"></span> Abdellatif Elmouatamid – Academic Faculty Website
 </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
